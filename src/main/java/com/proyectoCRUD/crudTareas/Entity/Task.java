@@ -31,6 +31,7 @@ public class Task {
     private LocalDateTime created_at= LocalDateTime.now();
     @Column(name="due_date")
     private LocalDateTime due_date;
-
+     @Column(name="active",nullable=false)
+    private Boolean active;
 
 }
